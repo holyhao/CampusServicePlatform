@@ -1,5 +1,5 @@
 # CampusServicePlatform
-
+校园服务平台
 校内新闻
 	
 活动信息	讲座信息
