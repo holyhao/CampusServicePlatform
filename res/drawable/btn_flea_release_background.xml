@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 定义标签的背景  比如已截止 等  具有红色圆角边框 -->
+<!-- defined by songdebin -->
+    <item>
+        <shape>
+  <!-- 填充色 -->           
+            <solid android:color="#FF3987D5" />
+
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+</layer-list>

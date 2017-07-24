@@ -1,0 +1,18 @@
+  <resources>
+<string-array name="date">
+    <item>2016年4月</item>    
+    <item>2016年3月</item>  
+    <item>2016年2月</item>  
+    <item>2016年1月</item>  
+    <item>2015年12月</item>  
+</string-array>
+
+
+<string-array name="type_fix">
+    <item>宿舍</item>    
+    <item>网络</item>  
+    <item>其他</item>   
+ 
+</string-array>
+    </resources>  
+ 

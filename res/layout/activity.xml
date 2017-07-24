@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" android:id="@+id/root_layout">
+    
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+	
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="#f3f3f3"/>
+    
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_tab_selector_1"
+            android:text="首页" />
+        
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_tab_selector_2"
+            android:text="镜湖边" />
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_tab_selector_3"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

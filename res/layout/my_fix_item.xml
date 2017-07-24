@@ -1,0 +1,48 @@
+<LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="100dp"
+ android:background="@drawable/listitem_selector"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+    
+<TextView
+     android:id="@+id/tv_myfix_id_item"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="id"
+     android:visibility="gone" /> 
+    
+    
+<TextView
+  android:id="@+id/tv_myfix_title_item"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_centerVertical="true"
+ android:layout_alignParentLeft="true"
+ android:maxLines="1"
+ android:ellipsize="end"
+ android:text="content"
+ android:textSize="14sp"
+ android:textColor="@color/BLACK_TITLE"/>    
+ 
+ <TextView
+   android:id="@+id/tv_myfix_datetime_item"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerVertical="true"
+   android:layout_alignParentRight="true"
+   android:drawableRight="@drawable/btn_forward"
+   android:drawablePadding="5dp"
+   android:text="time"
+   android:textSize="14sp" />    
+    
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitem_selector"
+    android:padding="@dimen/x6"
+    android:paddingTop="@dimen/x4"
+    android:orientation="vertical"
+    >    <com.loopj.android.image.SmartImageView
+        android:id="@+id/activity_item_poster"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/x6"   
+        android:layout_marginRight="@dimen/x6"
+        android:layout_marginTop="@dimen/x3"/>
+    
+    <TextView
+        android:id="@+id/activity_item_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/GRAY_TITLE"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/x7"
+        android:layout_marginTop="10dp"
+        android:text="玉兔辞岁龙献瑞，师生共迎元宵节"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y3"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x8"   
+        android:layout_marginRight="@dimen/x8" >
+        <TextView
+            android:id="@+id/tv_activity_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/activity_item_hoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="[南新社]"
+            android:textColor="@color/Item_blue"
+            android:textSize="@dimen/TIME_TITLE" />
+        <TextView
+            android:id="@+id/activity_item_actPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="A203"
+            android:textColor="@color/Item_blue"
+            android:textSize="@dimen/TIME_TITLE" />
+        
+        <TextView
+            android:id="@+id/activity_item_actTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/GRAY_TITLE"
+            android:gravity="right"
+            android:text="2016-04-01"
+            android:textSize="@dimen/TIME_TITLE"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="@dimen/x7"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E6E6E6"  />
+</LinearLayout>

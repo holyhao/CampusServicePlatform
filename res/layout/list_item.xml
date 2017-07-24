@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/listitem_selector"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/y4"
+        android:layout_marginBottom="@dimen/y4"
+        android:layout_marginRight="@dimen/y3"
+        android:layout_marginLeft="@dimen/y1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imageItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Item_Title_Style"
+            android:id="@+id/titleItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_news_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_sourcefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y1"
+                android:layout_weight="1"
+                android:text="[信息工程学院]"
+                android:textColor="@color/Item_blue"
+                android:layout_marginLeft="@dimen/x5"
+                android:textSize="@dimen/TIME_TITLE" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y1"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="2016年3月23日"
+                android:textColor="@color/GRAY_TITLE"
+                android:textSize="@dimen/TIME_TITLE" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

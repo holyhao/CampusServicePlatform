@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/listitem_selector"
+    android:padding="3dp">
+
+     <LinearLayout 
+        android:layout_marginTop="@dimen/y4"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginRight="@dimen/y3"
+        android:layout_marginLeft="@dimen/y1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+ <!-- 左侧的图片  -->
+       <com.loopj.android.image.SmartImageView
+         android:id="@+id/iv_lostfind_item"
+         android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/y2"
+    />  
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+      <!-- 标题最多显示两行多出的显示省略号 -->
+        <TextView
+            android:id="@+id/tv_lostfind_title_item"
+            style="@style/ItemErShou_Title_Style"           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:layout_marginLeft="@dimen/x2" />
+
+        
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+           <TextView
+                android:id="@+id/tv_statusshow_lostfind_item"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@color/Item_RED"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="已截止"
+                android:background="@drawable/tag_background"
+                android:textSize="@dimen/TIME_TITLE"/>
+           
+          </RelativeLayout>
+          
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_lostfind_id_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="gone" /> 
+
+            <TextView
+                android:id="@+id/tv_showtype_lostfind_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="[失物]"
+                android:textColor="@color/Item_blue"
+                android:textSize="@dimen/TIME_TITLE" />
+
+            <TextView
+                android:id="@+id/tv_datetime_lostfind_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="2016年3月23日"
+                android:textColor="@color/GRAY_TITLE"
+                android:textSize="@dimen/TIME_TITLE" />
+          </LinearLayout>
+        </LinearLayout> 
+       </LinearLayout>
+    </LinearLayout>
+
+ 
+</LinearLayout>

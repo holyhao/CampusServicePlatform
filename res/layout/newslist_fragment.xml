@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical"
+    tools:context="com.example.adapter.MainActivity" >
+
+    <!-- 加上标题栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="校内新闻"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="18sp" android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 在这里增加选项卡的切换按钮 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F3F3F3"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_news_type1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selected_item_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_news_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南燕要闻"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_news_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_news_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北大新闻" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_news_type3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_news_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学校公告" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.bdyjy.custom.view.XListView
+        android:id="@+id/newslist1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" >
+    </com.bdyjy.custom.view.XListView>
+    
+        <com.bdyjy.custom.view.XListView
+        android:visibility="gone"
+        android:id="@+id/newslist2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" >
+    </com.bdyjy.custom.view.XListView>
+
+
+</LinearLayout>

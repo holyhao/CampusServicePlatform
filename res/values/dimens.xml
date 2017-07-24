@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_edittext">15dp</dimen>
+    <dimen name="sperator_margin">10dp</dimen>
+ 
+    
+    
+    
+    <!-- ListView Item 字体设置 -->
+    <dimen name="Item_Title_Size">18sp</dimen>
+    <dimen name="Ttem_Liter">16sp</dimen>
+    <dimen name="TIME_TITLE">11sp</dimen>
+    
+    
+    <dimen name="Activity_time">12sp</dimen>
+    
+    
+    
+</resources>

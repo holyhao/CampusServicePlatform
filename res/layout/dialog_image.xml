@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+   <com.loopj.android.image.SmartImageView
+    android:id="@+id/iv_show"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    />  
+
+</LinearLayout>

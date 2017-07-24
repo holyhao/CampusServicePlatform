@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitem_selector"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="time"
+        android:text="14:00 - 15:00"
+        android:textColor="#A4A4A4"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="场地一_" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg5"
+            android:gravity="center"
+            android:tag="expired"
+            android:text="已过期"
+            android:textColor="@color/DarkGray"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg5"
+            android:gravity="center"
+            android:tag="appointmented"
+            android:text="已预约"
+            android:textColor="@color/DarkGray"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:tag="checked"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconfont_ck" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg4"
+            android:gravity="center"
+            android:tag="not_checked"
+            android:text="可预约"
+            android:textColor="#52A04A"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="场地二_" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg5"
+            android:gravity="center"
+            android:tag="expired"
+            android:text="已过期"
+            android:textColor="@color/DarkGray"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg5"
+            android:gravity="center"
+            android:tag="appointmented"
+            android:text="已预约"
+            android:textColor="@color/DarkGray"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:tag="checked"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconfont_ck" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg4"
+            android:gravity="center"
+            android:tag="not_checked"
+            android:text="可预约"
+            android:textColor="#52A04A"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="场地三_" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg5"
+            android:gravity="center"
+            android:tag="expired"
+            android:text="已过期"
+            android:textColor="@color/DarkGray"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg5"
+            android:gravity="center"
+            android:tag="appointmented"
+            android:text="已预约"
+            android:textColor="@color/DarkGray"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:tag="checked"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconfont_ck" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/content_bg4"
+            android:gravity="center"
+            android:tag="not_checked"
+            android:text="可预约"
+            android:textColor="#52A04A"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingTop="10dp" >
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_league_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="社团活动"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <View
+        android:id="@+id/league_content_image"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:background="@drawable/test_img" />
+    
+    <TextView
+        android:id="@+id/league_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="玉兔辞岁龙献瑞，师生共迎元宵节"
+        android:textSize="18sp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sponsor"
+                />
+            <TextView
+            	android:id="@+id/league_item_name"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="0.5"
+            	android:text="[南新社]"
+            	android:textColor="#A7C5EA"
+            	android:textSize="10sp" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time" />
+            <TextView
+            	android:id="@+id/league_item_time"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="0.5"
+            	android:text="2016-03-30 12:56pm"
+            	android:textColor="#A7C5EA"
+            	android:textSize="10sp" />
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location" />
+        <TextView
+            android:id="@+id/league_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="A203"
+            android:textColor="#A7C5EA"
+            android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E6E6E6" />
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动内容"
+        android:textSize="18sp"/>
+    <TextView 
+        android:id="@+id/league_content_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实验结果表明，基于水溶液的得到的磷酸铁钠不论在容量上还是在循环性能上都得到了显著的提高，
+        在0.1C的倍率下容量为142mAh g-1，在10C的倍率下能够循环6000次。XRD和in-situ XANES数据表明，水溶液离子
+        交换法得到的磷酸铁钠材料纯度高，几乎检测不到磷酸铁锂残留，而且钠离子和离子能实现更接近1:1的交换；相比之下，有机
+        溶液离子交换法制备的磷酸铁钠材料中能够明显地检测到磷酸铁锂残留，而且Na的反充也很不充分。实验分析认为关键原因在于
+        两种方法下电极材料/电解液界面的差异。在进一步对磷酸铁钠和磷酸铁锂两种材料的水溶液界面和有机溶液界面进行了建模和理
+        论分析后发现，对于有机溶液离子交换法，第二步充钠过程中，残余的锂离子（第一步脱锂过程中有锂离子残留，已被实验检测
+        证实）比钠离子更容易进入磷酸铁，从而形成较多的磷酸铁锂杂质。而对于水溶液离子交换法，第二步充钠过程锂离子进入磷酸
+        铁的能力会大大降低，从而降低了磷酸铁锂杂质的量，从而得到高纯度的磷酸铁钠。"
+        />
+
+</LinearLayout>

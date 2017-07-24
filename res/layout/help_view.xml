@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hint_dialog_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+        <TextView          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帮助文档" />  
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#BB999999"       
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="如果您是一名学生\n账号： 学号，如1301213868；\n密码：身份证后六位，登录后可修改\n如果您是一名教职工\n账号： OA账号，如***@pkusz.edu.cn；\n密码：身份证后六位，登录后可修改\n\n联系我们" />
+
+        <TextView
+           android:id="@+id/tel_number"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView1"    
+            android:layout_marginLeft="20dp" 
+           android:text="信息化办公室： 0755-26035565\n" />
+        
+           <TextView
+        
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tel_number"    
+           android:layout_marginLeft="20dp" 
+           android:text="版本信息\nV1.3 21160822\n" />
+  
+    </RelativeLayout>
+    
+       <View
+       android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#BB999999"        
+       />
+        
+ <RelativeLayout
+     android:id="@+id/quit_ly"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+        <TextView          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关闭" />  
+    </RelativeLayout>        
+
+</LinearLayout>

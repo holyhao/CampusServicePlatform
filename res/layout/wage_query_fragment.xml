@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 工资查询布局    宋德宾    2016-03-31 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    android:orientation="vertical" >
+    
+<!-- 标题栏 -->    
+   <!-- 标题栏 -->
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="工资查询"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />   
+   </RelativeLayout> 
+ 
+<View
+ android:layout_width="match_parent"   
+ android:layout_height="13dp"
+    />
+
+<!-- 查询时间 -->
+<RelativeLayout
+ android:layout_width="match_parent"   
+ android:layout_height="45dp"
+ android:background="#FFFFFF"   
+   >
+        
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="查询时间"  
+    android:textColor="#3B3B3B"
+    android:textSize="14sp"
+    android:layout_marginLeft="18dp"  
+    />
+
+<Spinner
+    android:id="@+id/spinner_wage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:entries="@array/date"
+    android:spinnerMode="dropdown"
+    android:layout_toLeftOf="@+id/image_wage_time_tag"
+    android:background="@null"
+    android:layout_centerVertical="true"/>
+
+<ImageView
+    android:id="@+id/image_wage_time_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="18dp"
+    android:layout_centerVertical="true"
+    android:src="@drawable/btn_forward" />
+    
+</RelativeLayout>
+
+ <View
+ android:layout_width="match_parent"   
+ android:layout_height="13dp"
+    /> 
+
+ 
+ 
+ <!-- 明细 -->
+<LinearLayout
+ android:layout_width="match_parent"   
+ android:layout_height="match_parent"
+ android:background="#FFFFFF"   
+ android:orientation="vertical">
+<!-- 数据显示 -->
+
+  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:scrollbars="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"  
+    android:orientation="vertical"   
+    >
+    
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="岗位津贴" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_gangweijingtie"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_gangweijingtie"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout>
+    
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="薪级工资" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_xinjigongzi"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_xinjigongzi"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout>  
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="奖励工资" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_jiangligongzi"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_jiangligongzi"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="补发工资" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_bufagongzi"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_bufagongzi"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="其他工资" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_qitagongzi"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_qitagongzi"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="过节费" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_guojiefei"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_guojiefei"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout>
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="应发工资合计" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_yingfagongziheji"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_yingfagongziheji"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:id="@+id/wage_danweifudangongjijin_tag"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="单位负担公积金" />
+ 
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/wage_danweifudangongjijin_tag"
+     android:layout_centerVertical="true"
+     android:textSize="14sp"
+     android:text="（不参与个人工资计算）" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_danweifudangongjijin"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_danweifudangongjijin"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:id="@+id/wage_danweifudanshebao_tag"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="单位负担社保" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/wage_danweifudanshebao_tag"
+     android:layout_centerVertical="true"
+     android:textSize="14sp"
+     android:text="（不参与个人工资计算）" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_danweifudanshebao"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_danweifudanshebao"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+
+
+<!-- 一行显示 -->    
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  android:background="#FFFFFF"
+    >
+ <View
+     android:layout_width="324dp" 
+     android:layout_height="1dp"
+     android:background="#E8E8E8"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="18dp"
+     android:textSize="14sp"
+     android:textColor="#3B3B3B"
+     android:text="代扣个人公积金" />
+ 
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/wage_daikougerengongjijin"
+     android:layout_centerVertical="true"
+      android:textSize="14sp"
+     android:text="￥" />
+
+ <TextView
+     android:id="@+id/wage_daikougerengongjijin"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="18dp"
+      android:textSize="14sp"
+     android:text="2900" />
+</RelativeLayout> 
+   
+</LinearLayout>
+
+ </ScrollView>
+ 
+</LinearLayout>
+  
+
+</LinearLayout>

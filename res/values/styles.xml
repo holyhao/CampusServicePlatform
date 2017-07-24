@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="weibo_tab">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:background">@drawable/weibolist_bottombar_itembg_selector</item>
+        <item name="android:textColor">@color/weibolist_bottombar_textcolor_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+        <style name="Item_Title_Style">
+            <item name="android:textColor">@color/Item_Title</item>
+            <item name="android:textSize">@dimen/Item_Title_Size</item>
+            <item name="android:textAppearance">?android:attr/textAppearanceLargeInverse</item>
+            <item name="android:ellipsize">end</item> 
+            <item name="android:maxLines">2</item>
+            <item name="android:layout_marginLeft">@dimen/x5</item>
+              <item name="android:layout_marginTop">@dimen/x5</item>          
+           
+        </style>
+        
+        <style name="ItemErShou_Title_Style">
+            <item name="android:textColor">@color/Item_Title</item>
+            <item name="android:textSize">@dimen/Ttem_Liter</item>
+            <item name="android:textAppearance">?android:attr/textAppearanceLargeInverse</item>
+            <item name="android:ellipsize">end</item> 
+            <item name="android:maxLines">2</item>
+            <item name="android:layout_marginLeft">@dimen/x4</item>      
+           
+        </style>
+    
+    
+    
+<!-- holy 投诉建议分类下拉选择-->
+   <string-array name="spingarr">
+     <item>食堂</item>  
+     <item>校园安全</item>  
+     <item>网络</item>   
+    </string-array>
+  
+
+<style name="customtitlebar" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle"> @style/MyActionBar</item>
+    </style>
+
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+   
+
+   
+   
+   
+    
+</resources>
+ 

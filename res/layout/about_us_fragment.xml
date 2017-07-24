@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E0E0E0"
+     android:gravity="center_horizontal"  
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="关于我们"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="15dp"
+     android:background="@color/white">
+ <!-- 按钮列表 -->
+  <LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content" 
+   android:orientation="vertical"
+   android:background="#FFFFFF"
+   android:layout_marginLeft="15dp"
+   android:layout_marginRight="15dp">
+   <View 
+    android:layout_width="fill_parent"
+    android:layout_height="0.1dp"
+    android:background="#e0e0e0"/>
+ <RelativeLayout
+  android:layout_width="match_parent"  
+  android:layout_height="300dp" 
+  > 
+ 
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.1dp"
+      android:layout_alignParentBottom="true"
+      android:background="#C3C3C3"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:text="北京大学深圳研究生院（英文简称PKUSZ）是经教育部批准于2001年4月批准成立，是北京大学与深圳市政府合作创办的、以全日制研究生教育为主的办学实体、以全日制研究生教育为主的高等教育机构[1]  ，是坐落在深圳的北京大学国际化校区，是北京大学创建世界一流大学的重要组成部分。
+截至2015年11月，有全日制在校研究生2873人，其中硕士研究生2574人，博士研究生236人；在校留学生133名，留学生来自30多个国家和地区。2002－2014年，累计招收全日制研究生9086人，含博士研究生545人，硕士研究生8541人。校园占地面积21.28万平米， 已建与在建建筑面积为17.51万平米！"
+      android:textColor="#505050"
+      android:textSize="14sp" />
+
+   </RelativeLayout>
+
+  
+  </LinearLayout>   
+   
+   </ScrollView>
+ 
+</LinearLayout>

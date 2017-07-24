@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical"
+    tools:context="com.example.adapter.MainActivity" >
+    
+    
+    <!-- 加上标题栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+
+            <TextView
+                android:id="@+id/tv_contact_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="通讯录"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 搜索框 -->
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="43dp"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"
+       android:background="#E8E8E8"
+       >
+
+       
+<!-- 关闭状态下的搜索框 -->      
+      <RelativeLayout  
+          android:id="@+id/searchbar_off"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_centerInParent="true"
+          android:background="@drawable/searchbar_background">
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="搜索"
+            android:textSize="15sp" />         
+      </RelativeLayout>
+      
+      
+      
+      
+ <!-- 工作状态下的显示 -->      
+      <RelativeLayout  
+          android:id="@+id/searchbar_on"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:visibility="gone"
+          android:layout_centerInParent="true"
+        
+          android:background="@drawable/searchbar_background"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp">
+          
+          
+        <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true" 
+         android:src="@drawable/search" />  
+         
+        <EditText
+         android:id="@+id/et_search"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:hint="搜索"
+         android:layout_marginLeft="25dp"
+         android:singleLine="true"
+         android:imeOptions="actionSearch"
+         android:textSize="15sp"
+         android:ems="15" /> 
+        
+          
+       <!-- 取消搜索功能 -->   
+       <TextView
+        android:id="@+id/tv_search_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="取消"
+        android:textColor="#104E8B"
+        android:textSize="15sp"/>
+       
+       <!-- 竖直分割线 -->
+       <View
+        android:layout_width="1dp"
+        android:layout_height="16dp"
+        android:background="#E8E8E8"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"   />       
+      </RelativeLayout>     
+  
+   </RelativeLayout>
+    
+
+
+    
+    <com.bdyjy.custom.view.XListView 
+        android:id="@+id/department_1_contact_listview"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:divider="#E0E0E0"
+        android:dividerHeight="3px">
+    </com.bdyjy.custom.view.XListView>
+</LinearLayout>

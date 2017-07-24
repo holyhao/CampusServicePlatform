@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#0000</color>
+    <color name="white">#fff</color>
+    <color name="weibo_listtab_off">#535252</color>
+    <color name="gray">#FF8B8B</color>
+    <color name="CadetBlue1">#98F5FF</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="White">#FFFFFF</color>
+    <color name="DarkRed">#8B0000</color>
+    <color name="LightRed">#FF0000</color>
+    <color name="DarkGray">#575656</color>
+    <color name="LightGray1">#EFEFEF</color>
+    <color name="Bigred">#FF0000</color>
+    
+    <color name="Red_TEXT">#FF0000</color>
+    <color name="Item_blue">#407fdc</color>
+    
+    <color name="Item_Title">#494848</color>
+    <!-- parle -->
+    <color name="divider_gray">#E0E0E0</color>
+    
+    <color name="BLACK_TITLE">#494848</color>
+    <color name="GRAY_TITLE">#959595</color>
+    
+    <color name="Item_RED">#FF2A2A</color>
+    
+    <color name="Bottom_font_color">#9A0000</color>
+    
+    <color name="Title_change_black">#5A5A5A</color>
+    
+</resources>

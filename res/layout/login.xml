@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.exampleandroidproject.MainActivity1" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toplogo" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/belowlogo" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="账号:"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:textColorHint="#AAADAA"
+            android:hint="学生学号/教职工OA账号"
+            android:textColor="#AAADAA"
+            android:textSize="14sp"
+
+            />
+
+        <Button
+            android:layout_weight="0.5"
+            android:id="@+id/btn_clearusername"
+            android:layout_width="wrap_content"         
+            android:layout_height="wrap_content"
+            android:background="@drawable/clear_username" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:background="@drawable/line" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="密码:"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"            
+            android:hint="初始密码证件号后六位"
+            android:textColorHint="#AAADAA"
+            android:inputType="textPassword"
+            android:textColor="#AAADAA"
+            android:textSize="14sp"
+
+            />
+        <!--   
+         android:text="liaocy@pkusz.edu.cn"
+         android:text="210632" 
+                 android:text="18123456789"
+                    android:text="123456" 
+           -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:background="@drawable/line" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edittext"
+            android:background="@drawable/login_btn_backgound"
+            android:text="登录"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/login_edittext"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找回密码"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/change_language" >
+        </LinearLayout>
+        
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/help_background"
+            android:textColor="#FF3A3A3A"
+            android:text="帮助"
+            android:onClick="help_click"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"          
+            android:background="@drawable/copyright" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

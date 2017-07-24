@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical"
+    tools:context="com.example.adapter.MainActivity" >
+
+    <!-- 加上标题栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/recruit_list_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="招聘信息"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="18sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray" />
+
+    <!-- 搜索框 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#E8E8E8"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <!-- 关闭状态下的搜索框 -->
+
+        <RelativeLayout
+            android:id="@+id/recruit_searchbar_off"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/searchbar_background" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="搜索"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- 工作状态下的显示 -->
+
+        <RelativeLayout
+            android:id="@+id/recruit_searchbar_on"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/searchbar_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/recruit_et_search"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:ems="15"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textSize="15sp" />
+            
+              <!-- 删除功能 -->
+              <Button
+	              android:id="@+id/bt_search_delete"
+	              android:layout_width="20dp"
+	              android:layout_height="20dp"
+	              android:layout_centerVertical="true"
+	              android:layout_alignParentRight="true"
+	              android:layout_marginRight="42dp"  
+	              android:visibility="invisible"
+	              android:background="@drawable/delete_icon" /> 
+
+            <!-- 取消搜索功能 -->
+
+            <TextView
+                android:id="@+id/recruit_tv_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:textColor="#104E8B"
+                android:textSize="15sp" />
+
+            <!-- 竖直分割线 -->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="#E8E8E8" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.bdyjy.custom.view.XListView
+            android:id="@+id/recruit_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+        </com.bdyjy.custom.view.XListView>
+    </LinearLayout>
+
+</LinearLayout>

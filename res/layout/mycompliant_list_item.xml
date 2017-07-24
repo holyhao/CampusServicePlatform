@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="100dp"
+ android:background="@drawable/listitem_selector"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+    
+<TextView
+     android:id="@+id/mycomplaint_id"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="id"
+     android:visibility="gone" /> 
+    
+    
+<TextView
+  android:id="@+id/mycomplaint_titleItem"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_centerVertical="true"
+ android:layout_alignParentLeft="true"
+ android:maxLines="1"
+ android:ellipsize="end"
+ android:text="content"
+ android:textSize="14sp"
+ android:textColor="@color/BLACK_TITLE"/>    
+ 
+ <TextView
+   android:id="@+id/mycomplaint_item_time"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerVertical="true"
+   android:layout_alignParentRight="true"
+   android:drawableRight="@drawable/btn_forward"
+   android:drawablePadding="5dp"
+   android:text="time"
+   android:textSize="14sp" />    
+    
+</RelativeLayout>
+
+</LinearLayout>
+<!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/listitem_selector"
+    android:padding="3dp" >
+
+      <LinearLayout 
+        android:layout_marginTop="@dimen/y4"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginRight="@dimen/y3"
+        android:layout_marginLeft="@dimen/y1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+    
+   <com.loopj.android.image.SmartImageView
+        android:id="@+id/mycomplaint_imageItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/y2"
+         />       
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mycomplaint_titleItem"
+            style="@style/ItemErShou_Title_Style"           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="食堂卫生为题"
+            android:layout_marginLeft="@dimen/x2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/x2"  >
+
+            <TextView
+                android:id="@+id/mycomplaint_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="[类别1]"
+                android:textColor="@color/Item_blue"
+                android:textSize="@dimen/TIME_TITLE" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="[未处理]"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>  -->

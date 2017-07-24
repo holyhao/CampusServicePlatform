@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back"
+                android:drawablePadding="5dp"
+                android:text="返回"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="投诉建议内容页"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:background="#DCDCDC">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF">
+    <!-- 分类 -->
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="60dp"
+           android:layout_marginLeft="@dimen/login_edittext"
+           android:layout_marginRight="@dimen/login_edittext"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+            >
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="分类:"
+               android:textColor="#000000"
+               android:textSize="14sp" />
+
+      
+           
+          
+             <EditText
+            android:id="@+id/complaint_typeshow"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"           
+            android:textColor="#A5ADA7"
+            android:textSize="14sp"
+            android:text="网络维修" 
+            android:focusable="false"
+            android:layout_marginRight="5dp"
+            />
+          
+
+          
+
+           
+       </LinearLayout>
+ 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+   <!-- 联系方式 -->     
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="联系方式:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/complaint_contacts"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"           
+            android:textColor="#A5ADA7"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:text="18986736760"
+            />
+
+    </LinearLayout> 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:background="#DCDCDC" >
+    </LinearLayout>   
+        
+     <!--描述  -->   
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="描述:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"           
+            android:textColor="#A5ADA7"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:text="网络不好用啊"
+            />
+
+    </LinearLayout> 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:background="#DCDCDC" >
+    </LinearLayout>   
+   
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_edittext"
+        android:layout_marginRight="@dimen/login_edittext"
+        android:background="@drawable/line" >
+    </LinearLayout>
+    
+        
+                <!-- 图片展示 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_picture_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal" >
+
+                        <!-- 一张图片 -->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingRight="6dp" >
+
+                            <com.loopj.android.image.SmartImageView
+                                android:id="@+id/iv_show1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </RelativeLayout>
+
+                        <!-- 一张图片 -->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp" >
+
+                            <com.loopj.android.image.SmartImageView
+                                android:id="@+id/iv_show2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </RelativeLayout>
+
+                        <!-- 一张图片 -->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp" >
+
+                            <com.loopj.android.image.SmartImageView
+                                android:id="@+id/iv_show3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </RelativeLayout>
+
+                        <!-- 一张图片 -->
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingLeft="6dp" >
+
+                            <com.loopj.android.image.SmartImageView
+                                android:id="@+id/iv_show4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>        
+        
+  
+ </LinearLayout> 
+                 
+    </LinearLayout>     
+    
+    
+    
+
+</LinearLayout>

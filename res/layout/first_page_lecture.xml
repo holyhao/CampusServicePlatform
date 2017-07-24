@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/activity_item_poster"
+        android:layout_width="@dimen/x88"
+        android:layout_height="@dimen/y72"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shetuanhuodong_test" />
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/x3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y74"
+        android:orientation="vertical" >
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical" 
+          android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x2"
+            android:text="写在第53个学雷锋纪念日"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x3"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="............."
+            android:textSize="12sp"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_lecplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="[心灵鸡汤]"
+                android:textColor="@color/Item_blue"
+                android:textSize="@dimen/Activity_time" />
+            
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="111"
+                android:textColor="@color/GRAY_TITLE"
+                android:textSize="@dimen/Activity_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
