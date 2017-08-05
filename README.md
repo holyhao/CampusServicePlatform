@@ -1,5 +1,5 @@
 # CampusServicePlatform(Android Application)
-- This is a dog classification competition held by Baidu. Further information at http://js.baidu.com/
+- This is a Campus Service Platform for Android phone and you can download it at [Campus Service Platform for PKUsz](http://www.pkusz.edu.cn/list-384-1.html)
 
 ## Framework
 - Server
