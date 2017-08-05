@@ -1,27 +1,45 @@
-# CampusServicePlatform
-校园服务平台
-校内新闻
-	
-活动信息	讲座信息
-	        社团活动
-			
-教务教学	教务通知
-	        课室查询
-			
-招聘信息	招聘信息
-	        勤工助学
-			
-校园生活	场馆预定
-	        校园卡服务
-	        校园生活指南
-	        维护报修
-	        投诉建议
-			
-行政服务	通讯录
-	        工资查询
-			
-个人中心	
+# CampusServicePlatform(Android Application)
+- This is a dog classification competition held by Baidu. Further information at http://js.baidu.com/
 
-镜湖边	   二手交易
-	       失物招领
-	       动物园
+## Framework
+- Server
+  - Container Tomcat7.X
+  - Environment jdk1.7.X
+  - Database mysql5.7
+- Developer kits
+  - Eclipse
+  - SVN
+
+## Hardware
+- Intel® Core™ i7-5700 CPU
+- Memory 16G
+- Operate system Windows7
+
+## Function List
+- Campus news
+- Activity information
+  - Seminar Information
+  - Club activity
+- Teaching
+  - Educational administration notification
+  - Department query
+- Recruitment information
+  - Recruitment information
+  - Part-time job
+- Campus life
+  - Venue booking
+  - Library service
+  - Campus life guide
+  - Maintenance repair service
+  - Complaint and advice
+- Administrative service
+  - Address list
+  - Wage query
+- Personal center
+- Jinghu edge
+  - Second-hand transactions
+  - Lost and found
+
+> Feel free to contact me if you have any issues or better ideas about anything.
+
+> by Holy
